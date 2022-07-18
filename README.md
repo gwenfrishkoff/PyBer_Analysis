@@ -3,12 +3,14 @@
 ## Project Overview
 Our client is Omar, who works for Pyber, a python-based ride-sharing app company. Omar has asked us to conduct an exploratory analysis of ride-sharing data, using descriptive statistics and visualization of patterns and trends from rideshare data from January to early May of 2019 across 20 urban, rural, and suburban cities. He has requested the following deliverables:  
 	<ol>
-	<li> A merged dataset (combining 2 source data files using Pandas DataFrame);
-	<li> Descriptive statistics that summarize patterns and trends for each the following:
+	<li> A summary DataFrame, i.e., a merged dataset (combining 2 source data files using Pandas);
+	<li> A multiple-line chart of total fares for each city type that summarize patterns and trends for each the following:
 		<ol>
 		<li> The total number of rides for each city type;
-		<li> The average fares for each city type; and 
-		<li> The total number of drivers for each city type.
+		<li> The total number of drivers for each city type;
+		<li> The sum of fares for each city type;
+		<li> The average fare per ride for each city type; and 
+		<li> The average fare per driver.
 		</ol>
 	<li> Three types of data visualizations:
 		<ol>
@@ -88,10 +90,13 @@ We used Matplotlib to produce two additional types of data visualization:
 	<li> A series of pie charts -- visualize the following data for each city type (image file names = 'Fig5.png', 'Fig6.png', & 'Fig7.png'):
 		<ol>
 		<li> Fig5.png shows the percentage of fares by city type;
-		<li> Fig6.png shows the percentage of total rides by city type;; and 
-		<li> Fig7.png shows the percentage of fares by city type;.
+		<li> Fig6.png shows the percentage of ride counts by city type; and 
+		<li> Fig7.png shows the percentage of driver counts by city type;.
 		</ol>
 	</ol>
+
+## Methods for Creating Multiple-Line Chart (Matplotlib)
+We used an object-oriented interface method and the df.plot() method, together with the Matplotlib "fivethirtyeight" graph style, to create a multiple-line chart that shows changes in average fare per ride over time (from January through April 2019) for each city type. Results are saved to file (image file name = 'PyBer_fare_summary.png').
 
 ## Results
 Exploratory analyses showed the following patterns and trends:
@@ -110,13 +115,11 @@ Box-and-whisker plots (Fig2.png, Fig3.png, & Fig4.png) show the following result
 
 Pie chart visualizations (Fig5.png, Fig6.png, & Fig7.png) suggest the following conclusions:
 	<ol>
-	<li> XXXXXX
-	<li> XXXXXX; and
-	<li> XXXXXX.
+	<li> Urban city rides account for the largest percentage of fares (62.7%), followed by suburban cities (30.5%), and rural cities (6.8%);
+	<li> Urban city rides account for the largest percentage of ride counts (68.4%), followed by suburban cities (26.3%), and rural cities (5.3%); and
+	<li> Urban city rides are associated with the largest percentage of driver counts (80.9%), followed by suburban cities (16.5%), and rural cities (2.6%).
 	</ol>
 
 ## Summary & Conclusions
 
-the average fare for rides in the rural cities is about $11 and $5 more per ride than the urban and suburban cities, respectively. Why do you think there is such a big difference? By looking at the number of riders for each city, can you get a sense of the overall revenue?
-
-The average number of drivers in rural cities is nine to four times less per city than in urban and suburban cities, respectively. By looking at the driver count data and fare data, can you get a sense of the overall revenue?
+The average fare for rides in the rural cities is highest: about $11 more per ride than in urban cites and and ~$5 more per ride than in suburban cities. This trend could be related to differences in supply and demand: the ratio of riders to drivers is lower in rural cities, so it is possible that drivers charge more in these areas.
