@@ -83,7 +83,7 @@ We used NumPy to conduct exploratory analyses (file name = 'XXXXXX'). When this 
 We used Matplotlib to produce three types of data visualizations:
 	<ol>
 	<li> Box-and-whisker plots to determine if there are outliers in the data (file name = XXXXXX);
-	<li> A bubble chart that shows average fares versus the total number of rides (file name = XXXXXX); and
+	<li> A bubble chart that shows average fare versus the total number of rides, with bubble size based on the average number of drivers for each city type: urban, suburban, and rural (file name = 'Fig1.png'); and
 	<li> Pie charts that visualize the following data for each city type (file name = XXXXXX):
 		<ol>
 		<li> The percent of total fares;
