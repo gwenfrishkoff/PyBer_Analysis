@@ -79,17 +79,17 @@ We used NumPy (NP) np.mean() and np.median() functions, and the SciPy stats (STS
 		<li> The total number of drivers for each city type.
 		</ol>
 
-We created box-and-whisker plots to look for outliers (image file names = Fi2.png, Fig3.png, and Fig4.png)). 
+We created box-and-whisker plots to look for outliers (image file names = 'Fi2.png', 'Fig3.png', and 'Fig4.png'). 
 
 ## Methods for Data Visualization (Matplotlib)
 We used Matplotlib to produce two additional types of data visualization:
 	<ol>
 	<li> A bubble chart --  shows average fare versus the total number of rides, with bubble size based on the average number of drivers for each city type: urban, suburban, and rural (image file name = 'Fig1.png'); and
-	<li> A series of pie charts -- visualize the following data for each city type (image file name = XXXXXX):
+	<li> A series of pie charts -- visualize the following data for each city type (image file names = 'Fig5.png', 'Fig6.png', & 'Fig7.png'):
 		<ol>
-		<li> The percent of total fares;
-		<li> The percent of total rides; and 
-		<li> The percent of total drivers.
+		<li> Fig5.png shows the percentage of fares by city type;
+		<li> Fig6.png shows the percentage of total rides by city type;; and 
+		<li> Fig7.png shows the percentage of fares by city type;.
 		</ol>
 	</ol>
 
@@ -108,7 +108,7 @@ Box-and-whisker plots (Fig2.png, Fig3.png, & Fig4.png) show the following result
 		<li> There are no outliers in the driver count data series.
 		</ol>
 
-Data visualizations suggest the following conclusions:
+Pie chart visualizations (Fig5.png, Fig6.png, & Fig7.png) suggest the following conclusions:
 	<ol>
 	<li> XXXXXX
 	<li> XXXXXX; and
